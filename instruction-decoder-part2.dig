@@ -397,7 +397,8 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>104,100,11b,107</data>
+          <data>200,300,340,280,240,3c0,204,304,344,1b204,19204,1a204,22b,207
+,833,433,c33,700c,500c,600c,394</data>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -2278,7 +2279,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <long>51</long>
+          <long>55</long>
         </entry>
         <entry>
           <string>Bits</string>
