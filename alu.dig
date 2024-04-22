@@ -103,6 +103,10 @@
           <string>Bits</string>
           <int>64</int>
         </entry>
+        <entry>
+          <string>barrelSigned</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="500" y="400"/>
     </visualElement>
@@ -112,6 +116,14 @@
         <entry>
           <string>Bits</string>
           <int>64</int>
+        </entry>
+        <entry>
+          <string>barrelSigned</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>direction</string>
+          <direction>right</direction>
         </entry>
       </elementAttributes>
       <pos x="500" y="520"/>
@@ -170,10 +182,6 @@
         <entry>
           <string>Input Splitting</string>
           <string>64</string>
-        </entry>
-        <entry>
-          <string>Output Splitting</string>
-          <string>7</string>
         </entry>
       </elementAttributes>
       <pos x="400" y="440"/>
