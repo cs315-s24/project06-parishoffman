@@ -684,7 +684,7 @@
     <visualElement>
       <elementName>immediate_decoder.dig</elementName>
       <elementAttributes/>
-      <pos x="360" y="480"/>
+      <pos x="360" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>Comparator</elementName>
@@ -1554,7 +1554,7 @@
           <string>imm-S</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="520"/>
+      <pos x="520" y="480"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1564,7 +1564,7 @@
           <string>imm-U</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="540"/>
+      <pos x="520" y="500"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1574,7 +1574,7 @@
           <string>imm-B</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="560"/>
+      <pos x="520" y="520"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1871,7 +1871,7 @@
           <string>imm-I</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="500"/>
+      <pos x="520" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1881,7 +1881,7 @@
           <string>imm-J</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="580"/>
+      <pos x="520" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1895,7 +1895,7 @@
           <string>imm-J</string>
         </entry>
       </elementAttributes>
-      <pos x="1300" y="-260"/>
+      <pos x="1300" y="-320"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1921,20 +1921,6 @@
         <entry>
           <string>NetName</string>
           <string>imm-S</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1300" y="-320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>imm-U</string>
         </entry>
       </elementAttributes>
       <pos x="1300" y="-300"/>
@@ -2202,6 +2188,47 @@ end while
       </elementAttributes>
       <pos x="1560" y="-740"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>13-mul-test</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>EN CLR CLK PROG A0
+1  1   0   x    x
+1  0   0   x    x
+while (!(DONE))
+1  0   C   13   x
+end while
+1  0   0   13   9</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="1740" y="-740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
+      <elementAttributes/>
+      <pos x="1320" y="-480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>imm-U</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1300" y="-260"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -2330,6 +2357,10 @@ end while
     </wire>
     <wire>
       <p1 x="1300" y="-400"/>
+      <p2 x="1320" y="-400"/>
+    </wire>
+    <wire>
+      <p1 x="1320" y="-400"/>
       <p2 x="1360" y="-400"/>
     </wire>
     <wire>
@@ -2409,16 +2440,12 @@ end while
       <p2 x="-380" y="540"/>
     </wire>
     <wire>
-      <p1 x="280" y="540"/>
-      <p2 x="360" y="540"/>
+      <p1 x="-160" y="540"/>
+      <p2 x="-120" y="540"/>
     </wire>
     <wire>
       <p1 x="460" y="540"/>
       <p2 x="520" y="540"/>
-    </wire>
-    <wire>
-      <p1 x="-160" y="540"/>
-      <p2 x="-120" y="540"/>
     </wire>
     <wire>
       <p1 x="820" y="-160"/>
@@ -2503,10 +2530,6 @@ end while
     <wire>
       <p1 x="-220" y="-300"/>
       <p2 x="-200" y="-300"/>
-    </wire>
-    <wire>
-      <p1 x="460" y="560"/>
-      <p2 x="520" y="560"/>
     </wire>
     <wire>
       <p1 x="480" y="-820"/>
@@ -2617,10 +2640,6 @@ end while
       <p2 x="700" y="-580"/>
     </wire>
     <wire>
-      <p1 x="460" y="580"/>
-      <p2 x="520" y="580"/>
-    </wire>
-    <wire>
       <p1 x="480" y="-840"/>
       <p2 x="560" y="-840"/>
     </wire>
@@ -2671,6 +2690,10 @@ end while
     <wire>
       <p1 x="460" y="-460"/>
       <p2 x="600" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="460"/>
+      <p2 x="520" y="460"/>
     </wire>
     <wire>
       <p1 x="820" y="-80"/>
@@ -2777,6 +2800,10 @@ end while
       <p2 x="1460" y="-480"/>
     </wire>
     <wire>
+      <p1 x="460" y="480"/>
+      <p2 x="520" y="480"/>
+    </wire>
+    <wire>
       <p1 x="820" y="-100"/>
       <p2 x="860" y="-100"/>
     </wire>
@@ -2875,6 +2902,10 @@ end while
     <wire>
       <p1 x="460" y="-500"/>
       <p2 x="520" y="-500"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="500"/>
+      <p2 x="360" y="500"/>
     </wire>
     <wire>
       <p1 x="460" y="500"/>
@@ -2994,7 +3025,7 @@ end while
     </wire>
     <wire>
       <p1 x="280" y="-60"/>
-      <p2 x="280" y="540"/>
+      <p2 x="280" y="500"/>
     </wire>
     <wire>
       <p1 x="600" y="-580"/>
@@ -3051,6 +3082,10 @@ end while
     <wire>
       <p1 x="40" y="-60"/>
       <p2 x="40" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="1320" y="-480"/>
+      <p2 x="1320" y="-400"/>
     </wire>
     <wire>
       <p1 x="180" y="40"/>
