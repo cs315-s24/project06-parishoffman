@@ -397,8 +397,8 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>200,300,340,280,240,3c0,204,304,344,36204,32204,34204,22b,20b
-,831,831,c31,1e00c,1a00c,1c00c,394,1031,300,2c0</data>
+          <data>204,200,300,340,280,240,3c0,304,344,36204,32204,34204,22b,20b
+,431,831,c31,1e00c,1a00c,1c00c,214,1031,300,2c0</data>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -3026,7 +3026,7 @@
           <string>r1</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="-60"/>
+      <pos x="1160" y="-40"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3040,7 +3040,7 @@
           <string>r2</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="-40"/>
+      <pos x="1160" y="-20"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3054,7 +3054,7 @@
           <string>r3</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="-20"/>
+      <pos x="1160" y="0"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3068,7 +3068,7 @@
           <string>r4</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="0"/>
+      <pos x="1160" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3082,7 +3082,7 @@
           <string>r5</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="20"/>
+      <pos x="1160" y="40"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3096,7 +3096,7 @@
           <string>r6</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="40"/>
+      <pos x="1160" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3110,7 +3110,7 @@
           <string>i1</string>
         </entry>
       </elementAttributes>
-      <pos x="1160" y="60"/>
+      <pos x="1160" y="-60"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -3917,16 +3917,16 @@
       <p2 x="940" y="0"/>
     </wire>
     <wire>
-      <p1 x="1160" y="0"/>
-      <p2 x="1200" y="0"/>
-    </wire>
-    <wire>
       <p1 x="1720" y="0"/>
       <p2 x="1740" y="0"/>
     </wire>
     <wire>
       <p1 x="1480" y="0"/>
       <p2 x="1700" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="1160" y="0"/>
+      <p2 x="1200" y="0"/>
     </wire>
     <wire>
       <p1 x="-460" y="1280"/>
@@ -4105,16 +4105,20 @@
       <p2 x="820" y="-20"/>
     </wire>
     <wire>
-      <p1 x="1160" y="-20"/>
-      <p2 x="1200" y="-20"/>
-    </wire>
-    <wire>
       <p1 x="1340" y="-20"/>
       <p2 x="1360" y="-20"/>
     </wire>
     <wire>
       <p1 x="1480" y="-20"/>
       <p2 x="1720" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="1160" y="-20"/>
+      <p2 x="1200" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="1160" y="20"/>
+      <p2 x="1200" y="20"/>
     </wire>
     <wire>
       <p1 x="-440" y="20"/>
@@ -4127,10 +4131,6 @@
     <wire>
       <p1 x="740" y="20"/>
       <p2 x="820" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="1160" y="20"/>
-      <p2 x="1200" y="20"/>
     </wire>
     <wire>
       <p1 x="1480" y="20"/>
@@ -4325,10 +4325,6 @@
       <p2 x="660" y="-40"/>
     </wire>
     <wire>
-      <p1 x="1160" y="-40"/>
-      <p2 x="1200" y="-40"/>
-    </wire>
-    <wire>
       <p1 x="1420" y="-40"/>
       <p2 x="1460" y="-40"/>
     </wire>
@@ -4337,16 +4333,20 @@
       <p2 x="1740" y="-40"/>
     </wire>
     <wire>
+      <p1 x="1160" y="-40"/>
+      <p2 x="1200" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="1160" y="40"/>
+      <p2 x="1200" y="40"/>
+    </wire>
+    <wire>
       <p1 x="1700" y="40"/>
       <p2 x="1740" y="40"/>
     </wire>
     <wire>
       <p1 x="1480" y="40"/>
       <p2 x="1660" y="40"/>
-    </wire>
-    <wire>
-      <p1 x="1160" y="40"/>
-      <p2 x="1200" y="40"/>
     </wire>
     <wire>
       <p1 x="20" y="680"/>
@@ -4541,12 +4541,12 @@
       <p2 x="1200" y="-60"/>
     </wire>
     <wire>
-      <p1 x="1480" y="60"/>
-      <p2 x="1640" y="60"/>
-    </wire>
-    <wire>
       <p1 x="1160" y="60"/>
       <p2 x="1200" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="60"/>
+      <p2 x="1640" y="60"/>
     </wire>
     <wire>
       <p1 x="80" y="60"/>

@@ -160,14 +160,14 @@
           <string>12-31</string>
         </entry>
       </elementAttributes>
-      <pos x="80" y="320"/>
+      <pos x="80" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>BitExtender</elementName>
       <elementAttributes>
         <entry>
           <string>inputBits</string>
-          <int>20</int>
+          <int>32</int>
         </entry>
         <entry>
           <string>outputBits</string>
@@ -322,19 +322,47 @@
       </elementAttributes>
       <pos x="240" y="520"/>
     </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>0-11,12-31</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="160" y="320"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="0" y="320"/>
-      <p2 x="80" y="320"/>
-    </wire>
-    <wire>
-      <p1 x="100" y="320"/>
-      <p2 x="360" y="320"/>
-    </wire>
-    <wire>
       <p1 x="420" y="320"/>
       <p2 x="480" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="320"/>
+      <p2 x="200" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="320"/>
+      <p2 x="360" y="320"/>
     </wire>
     <wire>
       <p1 x="100" y="480"/>
@@ -405,6 +433,14 @@
       <p2 x="280" y="560"/>
     </wire>
     <wire>
+      <p1 x="0" y="340"/>
+      <p2 x="80" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="340"/>
+      <p2 x="200" y="340"/>
+    </wire>
+    <wire>
       <p1 x="-20" y="180"/>
       <p2 x="0" y="180"/>
     </wire>
@@ -453,12 +489,12 @@
       <p2 x="0" y="540"/>
     </wire>
     <wire>
-      <p1 x="0" y="320"/>
+      <p1 x="0" y="340"/>
       <p2 x="0" y="420"/>
     </wire>
     <wire>
       <p1 x="0" y="240"/>
-      <p2 x="0" y="320"/>
+      <p2 x="0" y="340"/>
     </wire>
     <wire>
       <p1 x="180" y="260"/>
